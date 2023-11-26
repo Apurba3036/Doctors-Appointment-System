@@ -8,7 +8,7 @@ const BlogPage = () => {
     const[category,setCatgory]=useState(null);
 
     useEffect(()=>{
-        fetch('FakeData.json')
+        fetch(`generated.json`)
         .then(res=>res.json())
         .then(data=>setBlogs(data))
     },[])
