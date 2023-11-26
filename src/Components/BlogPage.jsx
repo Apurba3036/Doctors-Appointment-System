@@ -3,16 +3,21 @@ import Blogcards from './Blogcards';
 
 const BlogPage = () => {
     const[blogs,setBlogs]=useState([]);
-    const [currentPgae,setCurrentpage]=useState(1);
-    const pagesize=12;    //blogs per page
-    const[category,setCatgory]=useState(null);
-
+   
+    
     useEffect(()=>{
-        fetch(`generated.json`)
-        .then(res=>res.json())
-        .then(data=>setBlogs(data))
-    },[])
-
+        fetch('generated.json'
+       
+        )
+          .then(function(response){
+            
+            return response.json();
+          })
+          .then(function(myJson) {
+           
+            setBlogs(myJson)
+          }),[]})
+        
     // console.log(blogs);
     return (
         <div>
