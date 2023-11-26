@@ -10,7 +10,7 @@ import Home from './Pages/Home.jsx';
 import Blogs from './Pages/Blogs.jsx';
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
-import SingleBlog from './Pages/singleBlog.jsx';
+// import SingleBlog from './Pages/singleBlog.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,13 +37,13 @@ const router = createBrowserRouter([
       path:"/Contact",
       element: <Contact></Contact>
     },
-    {
+    // {
 
-      path:"/SingleBlog",
-      element: <SingleBlog></SingleBlog>,
-      loader: ()=>fetch('FakeData.json').then(res=>res.json())
+    //   path:"/SingleBlog",
+    //   element: <SingleBlog></SingleBlog>,
+    //   loader: ()=>fetch('FakeData.json').then(res=>res.json())
       
-    }
+    // }
   
   ]
   },
