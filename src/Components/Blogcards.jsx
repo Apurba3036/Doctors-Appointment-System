@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaClock, FaUser } from 'react-icons/fa';
-import '../Pages/SingleBlog';
+
 const Blogcards = ({blogs}) => {
     const filtered= blogs;
     // console.log(filtered)
