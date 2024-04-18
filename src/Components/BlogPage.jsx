@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blogcards from './Blogcards';
+import { data } from 'autoprefixer';
 
 const BlogPage = () => {
     const[blogs,setBlogs]=useState([]);

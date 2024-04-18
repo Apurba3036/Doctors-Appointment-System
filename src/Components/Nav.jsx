@@ -17,13 +17,13 @@ const Nav = () => {
   const Navitems = [
     { path: "/", link: "Home" },
     { path: "/About", link: "About" },
-    { path: "/Blogs", link: "Blogs" },
-    { path: "/Contact", link: "Contact" }
+    { path: "/Blogs", link: "Doctors" },
+    { path: "/Contact", link: "Contact Us" }
   ]
   return (
     <header className='bg-black fixed top-0 right-0 left-0'>
       <nav className='px-5 py-5 max-w-7xl mx-auto flex justify-between'>
-        <a href="" className='text-lg font-bold text-white'>Apurba<span className='text-orange-400'>Blog</span></a>
+        <a href="" className='text-lg font-bold text-white'>Doctor<span className='text-orange-400'>Bari</span></a>
         <ul className='md:flex gap-12 text-lg hidden'>
           {Navitems.map((item, index) => (
             <li key={index}>
