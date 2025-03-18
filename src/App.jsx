@@ -1,21 +1,17 @@
-
-import './App.css'
-
-import { Outlet } from "react-router-dom"
-import Nav from "./Components/Nav"
-import Footer from './Components/footer'
-
+import { Outlet } from "react-router-dom";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 
 function App() {
-
-
   return (
-    <>
-      <Nav></Nav>
-      <Outlet></Outlet>
-      <Footer></Footer>
-    </>
-  )
+    <div className="flex flex-col min-h-screen">
+      <Nav />
+      <div className="flex-grow">
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

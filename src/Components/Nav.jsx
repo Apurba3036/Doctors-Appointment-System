@@ -18,10 +18,16 @@ const Nav = () => {
     { path: "/", link: "Home" },
     { path: "/About", link: "About" },
     { path: "/Blogs", link: "Doctors" },
-    { path: "/Contact", link: "Contact Us" }
-  ]
+    { path: "/Contact", link: "Contact Us" },
+    { path: "/chat", link: "Prescription Generate" },
+    { path: "/video", link: "Video Analysis" },
+    { path: "/prescription", link: "All Records" },
+    { path: "/prescription", link: "All Records" },
+    { path: "/book", link: "Generate Books" },
+  ];
+  
   return (
-    <header className='bg-black fixed top-0 right-0 left-0'>
+    <header className='bg-black fixed top-0 right-0 left-0 z-20'>
       <nav className='px-5 py-5 max-w-7xl mx-auto flex justify-between'>
         <a href="" className='text-lg font-bold text-white'>Doctor<span className='text-orange-400'>Bari</span></a>
         <ul className='md:flex gap-12 text-lg hidden'>

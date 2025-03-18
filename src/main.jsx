@@ -10,6 +10,11 @@ import Home from './Pages/Home.jsx';
 import Blogs from './Pages/Blogs.jsx';
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
+import Chat from './Pages/chat.jsx';
+import PrescriptionList from './Pages/PrescriptionList.jsx';
+import Video from './Pages/video.jsx';
+import Book from './Pages/Book.jsx';
+import Appanalysis from './Pages/Appanalysis.jsx';
 
 
 const router = createBrowserRouter([
@@ -39,7 +44,30 @@ const router = createBrowserRouter([
       element: <Contact></Contact>
     },
     {
-     
+      path: "/chat",
+      element: <Chat></Chat>
+      
+    },
+    {
+      path: "/prescription",
+      element: <PrescriptionList></PrescriptionList>
+      
+    }
+    ,
+    {
+      path: "/video",
+      element: <Video></Video>
+      
+    }
+    ,
+    {
+      path: "/book",
+      element: <Book></Book>
+      
+    },
+    {
+      path: "/analysis",
+      element:<Appanalysis></Appanalysis>
       
     }
       
